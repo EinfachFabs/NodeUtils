@@ -1,3 +1,5 @@
+const fetch = require("node-fetch");
+
 function getText(URL){
     return new Promise((resolve, reject) => {
         fetch(URL)
@@ -10,3 +12,5 @@ function getText(URL){
             .catch(reject);
     });     
 }
+
+module.exports = getText;
